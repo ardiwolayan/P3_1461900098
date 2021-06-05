@@ -29,4 +29,6 @@ Route::get('/pasien/edit/{id}',[SakitController::class, 'edit']);
 Route::post('/pasien/update',[SakitController::class, 'update']);
 Route::get('/0098filter3', [SakitController::class, 'filter3']);
 Route::get('/0098filter4', [SakitController::class, 'filter4']);
+Route::get('/0098all2', [SakitController::class, 'all2']);
 Route::get('/pasien/hapus/{id}',[SakitController::class,'hapus']);
+Route::get('/0098all1', [SakitController::class, 'all1']);

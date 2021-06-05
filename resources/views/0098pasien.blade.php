@@ -33,16 +33,17 @@
                                        @endforeach
                                             </tr>
 
-                                            <a href="0098index">Back</a>
+                                        <a href="0098index">Back</a>
                                         <div>
                                         <a href="0098tambah">Tambah</a>
                                         </div>
                                         <br>
                                         <div>
-Filter:
-</div>
-<a href="0098filter3">Surabaya</a>
-<a href="0098filter4"> Sidoarjo</a>
+                                        Filter:
+                                        </div>
+                                        <a href="0098all2">All</a>
+                                        <a href="0098filter3"> Surabaya</a>
+                                        <a href="0098filter4"> Sidoarjo</a>
 
                                     </tbody>
                                 </table>

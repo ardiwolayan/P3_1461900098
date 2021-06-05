@@ -36,7 +36,8 @@
 <div>
 Filter:
 </div>
-<a href="0098filter">Surabaya</a>
+<a href="0098all1">All</a>
+<a href="0098filter"> Surabaya</a>
 <a href="0098filter2"> Sidoarjo</a>
 
 

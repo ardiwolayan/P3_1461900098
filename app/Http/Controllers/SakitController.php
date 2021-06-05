@@ -28,6 +28,12 @@ class SakitController extends Controller
         $kamar = Kamar::select('pasiens.nama', 'pasiens.alamat','dokter.namad', 'dokter.jabatan')->join('pasiens', 'id_pasien', '=', 'pasiens.id')->join('dokter', 'id_dokter','=', 'dokter.id')->where('pasiens.alamat', 'Sidoarjo')->get();
         return view('0098index', ['kamar' => $kamar]);
     }
+    public function all1()
+    {
+        $kamar = Kamar::select('pasiens.nama', 'pasiens.alamat','dokter.namad', 'dokter.jabatan')->join('pasiens', 'id_pasien', '=', 'pasiens.id')->join('dokter', 'id_dokter','=', 'dokter.id')->get();
+        return view('0098index', ['kamar' => $kamar]);
+    }
+
     public function filter3()
     {
         $pasien = Pasien::select('nama', 'alamat')->where('alamat', 'Surabaya')->get();
@@ -37,6 +43,11 @@ class SakitController extends Controller
     public function filter4()
     {
         $pasien = Pasien::select('nama', 'alamat')->where('alamat', 'Sidoarjo')->get();
+        return view('0098pasien', ['pasien' => $pasien]);
+    }
+    public function all2()
+    {
+        $pasien = Pasien::all();
         return view('0098pasien', ['pasien' => $pasien]);
     }
 

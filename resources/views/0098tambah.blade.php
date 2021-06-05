@@ -1,7 +1,7 @@
 
 @extends('0098layout')
-
 @section('content')
+
 
 <main role="main" class="flex-shrink0">
  		<div class="container">
@@ -10,41 +10,26 @@
  					<div class="card-header bg-transparent mb-0"><h5 class="text-center">Tambah <span class="font-weight-bold text-primary">Pasien</span></h5></div> 
  					<div class="card">
  						<div class="card-body">
+                         <form action="/pasien/store/" method="POST">
+                            @csrf
 
-        <div class="pull-right">
-            <a class="btn btn-primary" href="0098index">Back</a>
-        </div>
-    </div>
-</div>
-
-
-<form action="/pasien/store/" method="POST">
-    @csrf
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Nama:</strong>
-                <input type="text" name="nama" class="form-control">
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="from-group">
-                <strong>Alamat</strong>
-                <input type="text" name="alamat" class="form-control">
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-</form>
-</div>
+							  <div class="form-group">
+							  <input type="hidden" name="id"> 
+							  <br/>
+							    <label>Nama</label>
+							    <input type="text" class="form-control" name="nama">
+							  </div>
+							  <div class="form-group">
+							    <label>Alamat</label>
+							    <input type="text" class="form-control" name="alamat">
+							  </div>
+							  <button type="submit" class="btn btn-primary" name="submit">Tambah</button>
+							<a type="button" href="/pasien" class="btn btn-white" name="kembali">Kembali</a>
+							</form>
+ 						</div>
  					</div>
  				</div>
  			</div>
  		</div>
  	</main>
-
-@endsection
+     @stop
