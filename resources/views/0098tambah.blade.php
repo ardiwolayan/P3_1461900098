@@ -24,7 +24,7 @@
 							    <input type="text" class="form-control" name="alamat">
 							  </div>
 							  <button type="submit" class="btn btn-primary" name="submit">Tambah</button>
-							<a type="button" href="/pasien" class="btn btn-white" name="kembali">Kembali</a>
+							<a type="button" href="/0098pasien" class="btn btn-white" name="kembali">Kembali</a>
 							</form>
  						</div>
  					</div>
