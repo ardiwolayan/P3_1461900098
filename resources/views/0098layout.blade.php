@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<div>
+    <div>
         @yield('content')
     </div>
 

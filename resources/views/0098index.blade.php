@@ -17,8 +17,8 @@
                                             <th class="text-center" scope="col">Alamat</th>
                                             <th class="text-center" scope="col">Dokter</th>
                                             <th class="text-center" scope="col">Jabatan</th>
-                                        
-                                </tr>
+
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <!-- kode_buku kode_kategori kode_penerbit judul_buku jumlah_buku pengarang_buku tahun_terbit_buku -->
@@ -28,20 +28,20 @@
                                             <td class="text-center">{{$p->alamat}}</td>
                                             <td class="text-center">{{$p->namad}}</td>
                                             <td class="text-center">{{$p->jabatan}}</td>
-        @endforeach
-<div>
-<a href="0098pasien">Tabel Pasien</a>
-</div>
-<br>
-<div>
-Filter:
-</div>
-<a href="0098all1">All</a>
-<a href="0098filter"> Surabaya</a>
-<a href="0098filter2"> Sidoarjo</a>
+                                            @endforeach
+                                            <div>
+                                                <a href="0098pasien">Tabel Pasien</a>
+                                            </div>
+                                            <br>
+                                            <div>
+                                                Filter:
+                                            </div>
+                                            <a href="0098all1">All</a>
+                                            <a href="0098filter"> Surabaya</a>
+                                            <a href="0098filter2"> Sidoarjo</a>
 
 
-                                            </tr>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

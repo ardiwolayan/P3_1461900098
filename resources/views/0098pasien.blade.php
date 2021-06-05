@@ -16,8 +16,8 @@
                                             <th class="text-center" scope="col">Nama Pasien</th>
                                             <th class="text-center" scope="col">Alamat</th>
                                             <th class="text-center" scope="col">Opsi</th>
-                                        
-                                </tr>
+
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <!-- kode_buku kode_kategori kode_penerbit judul_buku jumlah_buku pengarang_buku tahun_terbit_buku -->
@@ -25,21 +25,21 @@
                                         <tr>
                                             <td class="text-center">{{$p->nama}}</td>
                                             <td class="text-center">{{$p->alamat}}</td>
-                                        <td  class="text-center">
-                                        <a href="/pasien/edit/{{ $p->id }}">Edit</a>
-                                        <a href="/pasien/hapus/{{ $p->id}}">Hapus</a>
-                                        </td> 
+                                            <td class="text-center">
+                                                <a href="/pasien/edit/{{ $p->id }}">Edit</a>
+                                                <a href="/pasien/hapus/{{ $p->id}}">Hapus</a>
+                                            </td>
 
-                                       @endforeach
-                                            </tr>
+                                            @endforeach
+                                        </tr>
 
                                         <a href="0098index">Back</a>
                                         <div>
-                                        <a href="0098tambah">Tambah</a>
+                                            <a href="0098tambah">Tambah</a>
                                         </div>
                                         <br>
                                         <div>
-                                        Filter:
+                                            Filter:
                                         </div>
                                         <a href="0098all2">All</a>
                                         <a href="0098filter3"> Surabaya</a>
